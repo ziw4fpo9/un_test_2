@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="103279a8-d347-4f4b-9347-34ae8cdf032a" name="Changes" comment="ad">
+    <list default="true" id="103279a8-d347-4f4b-9347-34ae8cdf032a" name="Changes" comment="adtss">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +100,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761811527387</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adtss">
+      <option name="closed" value="true" />
+      <created>1761811632837</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761811632837</updated>
+    </task>
+    <task id="LOCAL-00005" summary="adtss">
+      <option name="closed" value="true" />
+      <created>1761811664355</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761811664355</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,15 +133,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0" />
     <MESSAGE value="ad" />
-    <option name="LAST_COMMIT_MESSAGE" value="ad" />
+    <MESSAGE value="adtss" />
+    <option name="LAST_COMMIT_MESSAGE" value="adtss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>21</line>
+          <line>28</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
