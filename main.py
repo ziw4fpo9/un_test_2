@@ -1,16 +1,48 @@
-# This is a sample Python script.
+# Програма: Сортування назв розділів документа
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# --- Введення кількості розділів ---
+while True:
+    try:
+        n = int(input("Введіть кількість розділів (1–20): "))
+        if n <= 0 or n > 20:
+            print("Помилка: кількість повинна бути від 1 до 20.")
+            continue
+        break
+    except ValueError:
+        print("Помилка: введіть ціле число.")
 
+# --- Вибір методу сортування ---
+print("\nОберіть метод сортування:")
+print("1 — за зростанням (A → Z)")
+print("2 — за спаданням (Z → A)")
+print("3 — за довжиною назви")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+while True:
+    method = input("Ваш вибір (1/2/3): ")
+    if method in ("1", "2", "3"):
+        break
+    else:
+        print("Помилка: введіть 1, 2 або 3.")
 
+# --- Введення назв розділів ---
+sections = []
+for i in range(n):
+    title = input(f"Введіть назву розділу №{i+1}: ").strip()
+    sections.append(title)
 
-# Press the green button in the gutter to run the script. a
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# --- Прибирання дублікатів ---
+sections = list(set(sections))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# --- Сортування ---
+if method == "1":
+    sections.sort()
+elif method == "2":
+    sections.sort(reverse=True)
+elif method == "3":
+    sections.sort(key=len)
+
+# --- Вивід результату ---
+print("\nВідсортовані назви розділів:")
+for title in sections:
+    print("-", title)
+
