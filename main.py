@@ -46,4 +46,4 @@ print("\nВідсортовані назви розділів:")
 for title in sections:
     print("-", title)
 
-#adas
+#adasa
