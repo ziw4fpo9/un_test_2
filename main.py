@@ -24,7 +24,8 @@ while True:
 print("\nОберіть метод сортування:")
 print("1 — за зростанням (A → Z)")
 print("2 — за спаданням (Z → A)")
-print("3 — за довжиною назви")
+print("3 — за довжиною назви (а → аа) ")
+print("4 — за довжиною назви (аа → а) ")
 
 while True:
     method = input("Ваш вибір (1/2/3/4): ")
@@ -49,19 +50,17 @@ sections = list(set(sections))
 
 # Сортування
 if method == "1":
-    print("Сортування з меньшого до більшого")
+    print("\nСортування: за зростанням (A → Z)")
     sections.sort()
 elif method == "2":
-    print("Сортування з більшого до меньшого")
+    print("\nСортування: за спаданням (Z → A)")
     sections.sort(reverse=True)
 elif method == "3":
-    print("Сортування за len")
-    print("Сортування з меньшого до більшого")
-    sections.sort(key=len)
+    print("\nСортування: за довжиною (коротші → довші, потім A → Z)")
+    sections.sort(key=lambda x: (len(x), x.lower()))
 elif method == "4":
-    print("Сортування за len")
-    print("Сортування з більшого до меньшого")
-    sections.sort(key=len,reverse=True)
+    print("\nСортування: за довжиною (довші → коротші, потім A → Z)")
+    sections.sort(key=lambda x: (-len(x), x.lower()))
 
 # Вивід результату
 print("\nВідсортовані назви розділів:")
